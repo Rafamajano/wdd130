@@ -1,0 +1,132 @@
+/* ===== General Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Root Variables ===== */
+:root {
+  --primary-color: #055a05;       /* forest green */
+  --secondary-color: #f4a261;     /* warm sand */
+  --accent1-color: #264653;       /* dark slate blue */
+  --accent2-color: #e9c46a;       /* light golden yellow */
+  --heading-font: "Times New Roman", "Georgia", serif;
+  --body-font: Arial, Helvetica, sans-serif;
+}
+
+/* ===== Body ===== */
+body {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+  line-height: 1.6;
+  background-color: #f9f9f9;
+}
+
+/* ===== Header & Nav ===== */
+header {
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  padding: 1rem 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav a {
+  color: var(--accent2-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--secondary-color);
+}
+
+/* ===== Main, Hero & Article ===== */
+main {
+  width: 840px;
+  margin: 2rem auto;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(38, 70, 83, 0.7); /* overlay */
+  font-family: var(--heading-font);
+  font-size: 2rem;
+}
+
+.hero article {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  width: calc(100% - 40px);
+  background-color: rgba(244, 162, 97, 0.8);
+  padding: 16px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.hero article img {
+  float: right;
+  width: 125px;
+  margin-left: 16px;
+  border-radius: 8px;
+  border: 2px solid #fff;
+}
+
+/* ===== Sections ===== */
+section {
+  margin: 20px 0;
+  padding: 10px;
+}
+
+h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+/* ===== Social Media Icons ===== */
+.socialmedia a {
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.socialmedia img {
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+}
