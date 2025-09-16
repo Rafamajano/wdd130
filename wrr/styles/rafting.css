@@ -1,59 +1,65 @@
-/* ===== General Reset ===== */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* ===== Root Variables ===== */
+/* Variables */
 :root {
-  --primary-color: #055a05;       /* forest green */
-  --secondary-color: #f4a261;     /* warm sand */
-  --accent1-color: #264653;       /* dark slate blue */
-  --accent2-color: #e9c46a;       /* light golden yellow */
-  --heading-font: "Times New Roman", "Georgia", serif;
+  --primary-color: #055a05;
+  --secondary-color: #f4a261;
+  --accent1-color: #264653;
+  --accent2-color: #e9c46a;
+  --heading-font: "Times New Roman", Georgia, serif;
   --body-font: Arial, Helvetica, sans-serif;
 }
 
-/* ===== Body ===== */
+/* Body */
 body {
   font-family: var(--body-font);
   color: var(--accent1-color);
-  line-height: 1.6;
   background-color: #f9f9f9;
 }
 
-/* ===== Header & Nav ===== */
+/* Header */
 header {
   background-color: var(--primary-color);
   color: var(--accent2-color);
-  padding: 1rem 0;
+  padding: 10px 0;
+  text-align: center;
 }
 
-nav {
+header .logo {
+  width: 120px;
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 20px;
 }
 
-nav a {
-  color: var(--accent2-color);
+nav ul li a {
+  color: white;
   text-decoration: none;
   font-weight: bold;
-  margin-right: 16px;
 }
 
-nav a:hover {
-  color: var(--secondary-color);
+nav ul li a:hover {
+  text-decoration: underline;
 }
 
-/* ===== Main, Hero & Article ===== */
+/* Main */
 main {
   width: 840px;
-  margin: 2rem auto;
+  margin: 20px auto;
 }
 
-/* Hero */
 .hero {
   position: relative;
 }
@@ -62,7 +68,6 @@ main {
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 8px;
 }
 
 .hero h1 {
@@ -71,66 +76,54 @@ main {
   width: 100%;
   padding: 16px;
   text-align: center;
-  opacity: 0.7;
+  opacity: 0.8;
   background-color: var(--accent1-color);
   color: #fff;
-  background-color: rgba(38, 70, 83, 0.7);
   font-family: var(--heading-font);
-  font-size: 2rem;
 }
 
 .hero article {
   position: absolute;
   bottom: 20px;
-  left: 20px;
-  width: calc(100% - 40px);
-  background-color: rgba(244, 162, 97, 0.8);
-  padding: 16px;
+  right: 20px;
+  background: rgba(255,255,255,0.8);
+  padding: 10px;
   border-radius: 8px;
-  color: #fff;
 }
 
 .hero article img {
   float: right;
   width: 125px;
-  margin-left: 16px;
-  border-radius: 8px;
-  border: 2px solid #fff;
+  margin-left: 10px;
+  border-radius: 5px;
 }
 
-/* ===== Sections ===== */
+/* Sections */
 section {
   margin: 20px 0;
   padding: 10px;
 }
 
-h2 {
+h1, h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
-  margin-bottom: 10px;
 }
 
-/* ===== Footer ===== */
+/* Footer */
 footer {
   text-align: center;
   background-color: var(--primary-color);
-  color: var(--accent2-color);
-  padding: 1rem;
-  margin-top: 2rem;
+  color: white;
+  padding: 15px 0;
+  margin-top: 20px;
 }
 
-footer p {
-  margin-bottom: 10px;
-}
-
-/* ===== Social Media Icons ===== */
-.socialmedia a {
+footer .socialmedia a {
   text-decoration: none;
-  margin: 0 10px;
+  margin: 0 5px;
 }
 
-.socialmedia img {
+footer .socialmedia img {
   width: 32px;
-  height: 32px;
   vertical-align: middle;
 }
