@@ -20,6 +20,7 @@ body {
   font-family: var(--body-font);
   color: var(--accent1-color);
   background-color: #f9f9f9;
+  line-height: 1.6;
 }
 
 /* Header */
@@ -60,6 +61,7 @@ main {
   margin: 20px auto;
 }
 
+/* Hero Section */
 .hero {
   position: relative;
 }
@@ -76,54 +78,4 @@ main {
   width: 100%;
   padding: 16px;
   text-align: center;
-  opacity: 0.8;
-  background-color: var(--accent1-color);
-  color: #fff;
-  font-family: var(--heading-font);
-}
-
-.hero article {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  background: rgba(255,255,255,0.8);
-  padding: 10px;
-  border-radius: 8px;
-}
-
-.hero article img {
-  float: right;
-  width: 125px;
-  margin-left: 10px;
-  border-radius: 5px;
-}
-
-/* Sections */
-section {
-  margin: 20px 0;
-  padding: 10px;
-}
-
-h1, h2 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  background-color: var(--primary-color);
-  color: white;
-  padding: 15px 0;
-  margin-top: 20px;
-}
-
-footer .socialmedia a {
-  text-decoration: none;
-  margin: 0 5px;
-}
-
-footer .socialmedia img {
-  width: 32px;
-  vertical-align: middle;
 }
