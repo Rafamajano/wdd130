@@ -1,126 +1,42 @@
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Variables */
-:root {
-  --primary-color: #055a05;
-  --secondary-color: #f4a261;
-  --accent1-color: #264653;
-  --accent2-color: #e9c46a;
-  --heading-font: "Times New Roman", Georgia, serif;
-  --body-font: Arial, Helvetica, sans-serif;
-}
-
-/* Body */
-body {
-  font-family: var(--body-font);
-  color: var(--accent1-color);
-  background-color: #f9f9f9;
-}
-
 /* Header */
 header {
+  display: grid;
+  grid-template-columns: 150px 1fr; /* Logo a la izquierda, nav a la derecha */
+  align-items: center;
   background-color: var(--primary-color);
   color: var(--accent2-color);
-  padding: 10px 0;
-  text-align: center;
+  padding: 10px 20px;
+  text-align: left; /* quitamos el centrado */
 }
 
 header .logo {
   width: 120px;
   display: block;
-  margin: 0 auto 10px auto;
+  margin: 0;
 }
 
 /* Navigation */
 nav ul {
   list-style: none;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end; /* menú a la derecha */
   gap: 20px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav ul li a:hover {
-  text-decoration: underline;
-}
-
-/* Main */
-main {
-  width: 840px;
-  margin: 20px auto;
-}
-
-.hero {
-  position: relative;
-}
-
-.hero img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.hero h1 {
-  position: absolute;
-  top: 20px;
-  width: 100%;
-  padding: 16px;
-  text-align: center;
-  opacity: 0.8;
-  background-color: var(--accent1-color);
-  color: #fff;
-  font-family: var(--heading-font);
-}
-
-.hero article {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  background: rgba(255,255,255,0.8);
-  padding: 10px;
-  border-radius: 8px;
-}
-
-.hero article img {
-  float: right;
-  width: 125px;
-  margin-left: 10px;
-  border-radius: 5px;
-}
-
-/* Sections */
-section {
-  margin: 20px 0;
-  padding: 10px;
-}
-
-h1, h2 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
 }
 
 /* Footer */
 footer {
-  text-align: center;
+  display: flex;
+  justify-content: space-between; /* texto a la izq, social a la der */
+  align-items: center;
   background-color: var(--primary-color);
   color: white;
-  padding: 15px 0;
+  padding: 15px 20px;
   margin-top: 20px;
 }
 
-footer .socialmedia a {
-  text-decoration: none;
-  margin: 0 5px;
+footer .socialmedia {
+  display: flex;
+  gap: 10px;
 }
 
 footer .socialmedia img {
