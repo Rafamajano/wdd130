@@ -1,12 +1,11 @@
 /* Header */
 header {
   display: grid;
-  grid-template-columns: 150px 1fr; /* Logo a la izquierda, nav a la derecha */
-  align-items: center;
+  grid-template-columns: 150px 1fr;
   background-color: var(--primary-color);
   color: var(--accent2-color);
   padding: 10px 20px;
-  text-align: left; /* quitamos el centrado */
+  text-align: left; 
 }
 
 header .logo {
@@ -19,14 +18,14 @@ header .logo {
 nav ul {
   list-style: none;
   display: flex;
-  justify-content: flex-end; /* menú a la derecha */
+  justify-content: flex-end; 
   gap: 20px;
 }
 
 /* Footer */
 footer {
   display: flex;
-  justify-content: space-between; /* texto a la izq, social a la der */
+  justify-content: space-between; 
   align-items: center;
   background-color: var(--primary-color);
   color: white;
