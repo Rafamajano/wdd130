@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rafting Website | Rafael Majano</title>
+  <meta name="description" content="Explore exciting whitewater rafting trips, safety tips, and adventures with Exciting Expeditions.">
   <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
@@ -11,29 +12,38 @@
     <img src="images/logo.png" alt="Rafting Site Logo" class="logo">
     <nav>
       <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="about.html">Rafting Home</a></li>
-        <li><a href="index.html">About Us</a></li>
-        <li><a href="../about.html">About Me</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="trips.html">Trips</a></li>
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
     </nav>
   </header>
-  
 
   <main>
-    <h1>Rafting Adventure</h1>
-    <p>Welcome to my Rafting Website! Here you can explore exciting rafting trips, learn about safety tips, and see beautiful river landscapes.</p>
-    
-    <section>
-      <h2>Featured Rivers</h2>
-      <img src="images/river1.jpg" alt="River 1" width="600">
-      <p>River 1 offers thrilling rapids perfect for beginners and intermediates.</p>
-
-      <img src="images/river2.jpg" alt="River 2" width="600">
-      <p>River 2 is known for its scenic beauty and challenging waters.</p>
+    <!-- Hero -->
+    <section class="hero">
+      <img src="images/hero.jpg" alt="Rafting adventure hero image" class="hero-img">
+      <h1>Rafting Adventure Awaits</h1>
+      <p>Discover thrilling rafting trips and unforgettable river experiences!</p>
+      <a href="trips.html" class="btn">View Trips</a>
     </section>
 
+    <!-- Featured Rivers -->
+    <section class="featured-rivers">
+      <article>
+        <img src="images/river1.jpg" alt="River 1">
+        <h2>River 1</h2>
+        <p>Perfect for beginners and intermediates with calm yet exciting rapids.</p>
+      </article>
+      <article>
+        <img src="images/river2.jpg" alt="River 2">
+        <h2>River 2</h2>
+        <p>Known for scenic beauty and challenging waters for adventurous rafters.</p>
+      </article>
+    </section>
+
+    <!-- Safety Tips -->
     <section>
       <h2>Safety Tips</h2>
       <ul>
@@ -41,6 +51,20 @@
         <li>Follow your guide's instructions.</li>
         <li>Check weather conditions before rafting.</li>
       </ul>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+      <h2>Sign up for Updates</h2>
+      <form>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <button type="submit" class="btn">Sign Up</button>
+      </form>
     </section>
   </main>
 
